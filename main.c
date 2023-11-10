@@ -3,6 +3,8 @@
 #include "game.h"
 #include <unistd.h>
 
+#define FRAME_DURATION_US 16666
+
 int main()
 {
     renderer_init();
@@ -23,7 +25,7 @@ int main()
         renderer_clear();
         game_render(&game, renderer_putChar);
         renderer_refresh();
-        usleep(16 * 1000);
+        usleep(FRAME_DURATION_US);
     }
 
     game_deinit(&game);
