@@ -1,5 +1,0 @@
-renderer_ncurses.c:7:11: style: struct member 'Renderer_t::res' is never used. [unusedStructMember]
-    void *res;
-          ^
-nofile:0:0: information: Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem]
-
