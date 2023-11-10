@@ -14,6 +14,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN}}
           other_options: --error-exitcode=69
       - name: printReport
+        if: failure()
         run: cat cppcheck_report.txt
         
       # - name: publish report    
