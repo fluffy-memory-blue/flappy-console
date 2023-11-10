@@ -2,6 +2,11 @@
 
 #include <ncurses.h>
 
+typedef struct
+{
+    void *res;
+} Renderer_t;
+
 bool ncursesInitialized;
 
 int renderer_init(void)
