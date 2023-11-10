@@ -12,6 +12,7 @@ jobs:
         uses: deep5050/cppcheck-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN}}
+          std: c11
           other_options: --error-exitcode=69
       - name: Print cppcheck_report.txt
         if: always()
