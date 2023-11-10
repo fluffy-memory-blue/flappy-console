@@ -28,7 +28,7 @@ int main()
 
     game_deinit(&game);
     input_deinit();
-    renderer_deinit();
+    renderer_deinit()
 
     return 0;
 }
