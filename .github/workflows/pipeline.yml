@@ -1,0 +1,11 @@
+name: Pipeline
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: fluffy-memory-blue/workflows/.github/workflows/make.yml@master
+  cppcheck:
+    uses: fluffy-memory-blue/workflows/.github/workflows/cppcheck.yml@master
