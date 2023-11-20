@@ -6,4 +6,4 @@ on:
 
 jobs:
   make-app:
-    uses: fluffy-memory-blue/workflows/.github/workflows/build.yml@master
+    uses: fluffy-memory-blue/workflows/.github/workflows/c-cpp.yml@master
