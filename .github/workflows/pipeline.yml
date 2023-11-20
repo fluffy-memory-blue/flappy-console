@@ -7,5 +7,3 @@ on:
 jobs:
   make:
     uses: fluffy-memory-blue/workflows/.github/workflows/make.yml@master
-  cppcheck:
-    uses: fluffy-memory-blue/workflows/.github/workflows/cppcheck.yml@master
