@@ -5,5 +5,5 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  make-app:
     uses: fluffy-memory-blue/workflows/.github/workflows/make.yml@master
