@@ -1,11 +1,14 @@
 name: Workflows from other submodule
 
 on:
-  workflow_dispatch:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
 jobs:
   build:
-    uses: fluffy-memory-blue/workflows/.github/workflows/c-cpp.yml@master
+    uses: fluffy-memory-blue/workflows/c-cpp.yml@master
   cppcheck:
     uses: fluffy-memory-blue/workflows/.github/workflows/cppcheck.yml@master
 
