@@ -1,10 +1,6 @@
 name: Workflows from other submodule
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on: [push]
 
 jobs:
   build:
@@ -13,6 +9,12 @@ jobs:
     uses: fluffy-memory-blue/workflows/.github/workflows/cppcheck.yml@master
 
   pipeline:
-    needs: build
+    # needs: build
+    # steps:
+    #   - run: echo "benc"
+
+    runs-on: ubuntu-latest
+
     steps:
-      - run: echo "benc"
+    - name: benc
+      run: echo "benc"
