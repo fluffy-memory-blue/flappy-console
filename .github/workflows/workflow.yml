@@ -1,0 +1,10 @@
+name: Workflows from other submodule
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: fluffy-memory-blue/workflows/c-cpp.yml@master
+  cppcheck:
+    uses: fluffy-memory-blue/workflows/cppcheck.yml@master
