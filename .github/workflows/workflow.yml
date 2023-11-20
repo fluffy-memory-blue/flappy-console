@@ -5,6 +5,6 @@ on:
 
 jobs:
   build:
-    uses: fluffy-memory-blue/workflows/c-cpp.yml@master
+    uses: fluffy-memory-blue/workflows/.github/workflows/c-cpp.yml@master
   cppcheck:
-    uses: fluffy-memory-blue/workflows/cppcheck.yml@master
+    uses: fluffy-memory-blue/workflows/.github/workflows/cppcheck.yml@master
