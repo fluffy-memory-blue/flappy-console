@@ -8,3 +8,8 @@ jobs:
     uses: fluffy-memory-blue/workflows/.github/workflows/c-cpp.yml@master
   cppcheck:
     uses: fluffy-memory-blue/workflows/.github/workflows/cppcheck.yml@master
+
+  pipeline:
+    needs: build
+    steps:
+      - run: echo "benc"
