@@ -6,6 +6,7 @@
 struct Unused_t
 {
     int alsoUnused;
+    int alsoUnused2;
 };
 
 
