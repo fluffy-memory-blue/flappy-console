@@ -3,6 +3,13 @@
 #include "game.h"
 #include <unistd.h>
 
+struct Unused_t
+{
+    int alsoUnused;
+    int alsoUnused2;
+};
+
+
 int main()
 {
     renderer_init();
